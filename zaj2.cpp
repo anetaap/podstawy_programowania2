@@ -89,6 +89,7 @@ int main(){
   cout<<"Pole prostokąta jest równe: "<<Rec.area()<<endl;
   cout<<"Obwód prostokąta to: "<<Rec.perimeter()<<endl;
   Rectangle2 Rec2(3,4);
+  Rectangle2 kw(2);
   Triangle troj(3);
   Triangle troj2(2,4,5);
   Circle2 sth;
