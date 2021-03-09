@@ -1,5 +1,7 @@
 //1. Proszę o napisanie dwóch z klas: Kolo, Prostokat, Trojkat. 
 //Każda z tych klas powinna mieć funkcje składowe liczące pole (area) i obwód (perimeter), oraz posiadać odpowiednie składowe.
+//2.Proszę aby dostęp bezpośredni do składowych niefunkcyjnych był prywatny, a do ustawiania wszystkiego proszę użyć setterów,
+//proszę też o zrobienie co najmniej jednego gettera działającego dla obiektów stałych.
 #include <iostream>
 #include <string>
 using namespace std;
