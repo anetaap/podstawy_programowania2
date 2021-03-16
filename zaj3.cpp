@@ -125,3 +125,48 @@ int main ()
   Kinga.setCechaCharakterystyczna("Niski wzrost"); 
   return 0;
 }
+
+
+
+//2. Proszę o napisanie klasy tekst, opakowującej const char* o nazwie String, zawierający tekst, oraz aktualny rozmiar tekstu. Proszę zaimplementować:.....
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+class Tekst
+{
+  char* string;
+  size_t length;
+public:
+  Tekst()
+  {
+    string=new char[0];
+    length=0;
+  }
+  Tekst(const char* string)
+  {
+    length=strlen(string);
+    char* n= new char [length+1];
+    strcpy(n, string);
+  }
+  Tekst(const Tekst &s) 
+  {
+    length=strlen(s.string);
+    char *n=new char [length+1];
+    strcpy(n, s.string);
+  }
+  ~Tekst() {delete string;}
+  void setNewText(const char* newText)
+  {
+    length=strlen(newText);
+    char *n=new char [length+1];
+    strcpy(n, newText);
+  }
+  int getSize() const {return strlen(string);}
+};
+
+
+int main() {
+  return 0;
+}
