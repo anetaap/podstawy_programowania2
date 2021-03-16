@@ -163,7 +163,7 @@ public:
     char *n=new char [length+1];
     strcpy(n, newText);
   }
-  int getSize() const {return strlen(string);}
+  int getSize() const {return length;}
 };
 
 
