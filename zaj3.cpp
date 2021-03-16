@@ -1,3 +1,4 @@
+//1. Proszę o napisanie kilku klas dziedziczących po sobie wg obrazka, ale przy każdym dziedziczeniu aby były pewne dodatkowe cechy....
 #include <iostream>
 #include <string>
 using namespace std;
