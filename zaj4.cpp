@@ -89,7 +89,15 @@ public:
 
 int main()
 {   
+    StringObject str("something");
     IntObject obj(9);
-    obj.whatAmI();
+    Object *wsk;
+    wsk=&obj;
+    wsk->whatAmI();
+    DoubleObject a(8);
+    wsk=&a;
+    wsk->whatAmI();
+    wsk=&str;
+    wsk->whatAmI();
     return 0;
 }
