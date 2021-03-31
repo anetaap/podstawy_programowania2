@@ -79,13 +79,29 @@ public:
     }
     string toString() override
     {
-        return "DoublegObject";
+        return "DoubleObject";
     }
     DoubleObject* clone() override
     {
         return new DoubleObject(*this);
     }
+    double getDouble() const {return value;}
 };
+
+
+double Double_sum(Object *ptr[], size_t size)
+{
+    double sum = 0;
+    for(int i = 0; i < size; ++i)
+    {
+        if(ptr[i]->toString() == "DoubleObject")
+        {
+            sum += dynamic_cast<DoubleObject*>(ptr[i])->getDouble();
+        }
+    }
+    cout<<sum<<endl;
+    return sum;
+}
 
 int main()
 {   
@@ -99,5 +115,8 @@ int main()
     wsk->whatAmI();
     wsk=&str;
     wsk->whatAmI();
+    Object *array[2]={ new DoubleObject(7.8), new DoubleObject(9)};
+    Double_sum(array,2);
+    delete [] array;
     return 0;
 }
