@@ -30,6 +30,14 @@ public:
         if (text != nullptr)
         delete text;
     }
+    void operator=(const char* newText){
+        if (newText == nullptr){ throw length_error("The text does not exist.");}
+        else{
+            size_ = sizeof(newText)/sizeof(char*);
+            text = new char[size_];
+            copy(newText, newText + size_, text);
+        }
+    }
     size_t size1(){
         return size_;
     }
