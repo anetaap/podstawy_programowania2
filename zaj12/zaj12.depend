@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1621955233 source:/home/anetaap/Dokumenty/Semestr_2/zaj12/VectoredList.cpp
+	"VectoredList.h"
+	<utility>
+
+1621960181 /home/anetaap/Dokumenty/Semestr_2/zaj12/VectoredList.h
+	<iostream>
+	<string>
+	<utility>
+	<vector>
+
+1621960163 source:/home/anetaap/Dokumenty/Semestr_2/zaj12/main.cpp
+	<iostream>
+	<vector>
+	"VectoredList.h"
+
